@@ -33,4 +33,8 @@ class Food < Sinatra::Base
     App.find(params[:id]).destroy
     redirect "/apps"
   end
+
+  get "/apps/admin" do
+   erb :admin
+ end
 end
